@@ -6,12 +6,12 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.7.5</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath>../pom.xml</relativePath>
 	</parent>
-	<groupId>com.quotes</groupId>
-	<artifactId>quotes.industry</artifactId>
+	<groupId>com.quotes.service</groupId>
+	<artifactId>quotes.industry.service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Server</name>
+	<name>quotes.industry.Server</name>
 	<description>Services for quotes industry application</description>
 	<properties>
 		<java.version>19</java.version>
@@ -22,6 +22,11 @@
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
+		 <dependency>
+	      <groupId>org.springframework.boot</groupId>
+	      <artifactId>spring-boot-starter-web</artifactId>
+	    </dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -29,11 +34,77 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.quotes.api</groupId>
-			<artifactId>quotes.industry.api</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-	</dependencies>
+	      <groupId>org.apache.commons</groupId>
+	      <artifactId>commons-lang3</artifactId>
+	    </dependency>
+
+	    <dependency>
+	      <groupId>org.springframework.boot</groupId>
+	      <artifactId>spring-boot-starter-data-jpa</artifactId>
+	    </dependency>
+
+	    <dependency>
+	      <groupId>org.springframework.boot</groupId>
+	      <artifactId>spring-boot-starter-security</artifactId>
+	    </dependency>
+
+	    <dependency>
+	      <groupId>io.jsonwebtoken</groupId>
+	      <artifactId>jjwt-api</artifactId>
+	      <version>0.10.7</version>
+	    </dependency>
+
+	    <dependency>
+	      <groupId>io.jsonwebtoken</groupId>
+	      <artifactId>jjwt-impl</artifactId>
+	      <version>0.10.7</version>
+	      <scope>runtime</scope>
+	    </dependency>
+
+	    <dependency>
+	      <groupId>io.jsonwebtoken</groupId>
+	      <artifactId>jjwt-jackson</artifactId>
+	      <version>0.10.7</version>
+	      <scope>runtime</scope>
+	    </dependency>
+
+	     <dependency>
+	      <groupId>cz.jirutka.rsql</groupId>
+	      <artifactId>rsql-parser</artifactId>
+	      <version>2.1.0</version>
+	    </dependency>
+
+	    <dependency>
+	      <groupId>com.querydsl</groupId>
+	      <artifactId>querydsl-core</artifactId>
+	      <scope>provided</scope>
+	    </dependency>
+
+	    <dependency>
+	      <groupId>org.apache.commons</groupId>
+	      <artifactId>commons-collections4</artifactId>
+	      <version>4.4</version>
+	      <scope>compile</scope>
+	    </dependency>
+
+	    <dependency>
+	      <groupId>com.querydsl</groupId>
+	      <artifactId>querydsl-jpa</artifactId>
+	    </dependency>
+
+	    <dependency>
+	      <groupId>org.projectlombok</groupId>
+	      <artifactId>lombok</artifactId>
+	      <scope>provided</scope>
+	    </dependency>
+
+        <dependency>
+            <groupId>com.quotes.api</groupId>
+            <artifactId>quotes.industry.api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>
