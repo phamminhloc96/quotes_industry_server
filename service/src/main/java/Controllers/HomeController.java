@@ -8,4 +8,9 @@ public class HomeController implements IHomeController {
     public String home() {
         return "Hello, world!";
     }
+
+    @Override
+    public String about() {
+        return "";
+    }
 }

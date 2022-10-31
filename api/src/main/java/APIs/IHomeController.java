@@ -11,4 +11,7 @@ public interface IHomeController {
     @GetMapping()
     public String home();
 
+    @GetMapping()
+    public String about();
+
 }
