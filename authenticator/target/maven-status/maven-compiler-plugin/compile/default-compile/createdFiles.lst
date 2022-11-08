@@ -1,4 +1,0 @@
-com\quotes\authenticator\AuthenticatorApplication.class
-com\quotes\controllers\AuthenticationController.class
-com\quotes\http\BaseWebSecurityConfig.class
-com\quotes\configuration\WebSecurityConfig.class
