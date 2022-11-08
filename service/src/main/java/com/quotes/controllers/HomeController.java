@@ -1,7 +1,6 @@
-package Controllers;
+package com.quotes.controllers;
 
-
-import APIs.IHomeController;
+import com.quotes.apis.IHomeController;
 
 public class HomeController implements IHomeController {
     @Override
