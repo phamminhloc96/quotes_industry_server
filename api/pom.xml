@@ -6,16 +6,18 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.7.5</version>
-		<relativePath>../pom.xml</relativePath>
+		<relativePath/>
 	</parent>
-	<groupId>com.quotes.api</groupId>
-	<artifactId>quotes.industry.api</artifactId>
+
+	<groupId>com.quotes</groupId>
+	<artifactId>api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>quotes.industry.APIs</name>
 	<description>APIs for quotes industry application</description>
+
 	<properties>
 		<java.version>19</java.version>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -98,6 +100,14 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>19</source>
+					<target>19</target>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
